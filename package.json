@@ -1,5 +1,5 @@
 {
-  "name": "insta-bot",
+  "name": "@aman179102/insta-bot",
   "version": "1.0.0",
   "description": "Automated Instagram meme posting bot that scrapes copyright-safe memes from Pinterest and posts them with intelligent scheduling",
   "main": "src/index.js",
