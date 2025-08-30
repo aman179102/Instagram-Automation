@@ -1,0 +1,56 @@
+{
+  "name": "insta-bot",
+  "version": "1.0.0",
+  "description": "Automated Instagram meme posting bot that scrapes copyright-safe memes from Pinterest and posts them with intelligent scheduling",
+  "main": "src/index.js",
+  "bin": {
+    "insta-bot": "./bin/cli.js"
+  },
+  "scripts": {
+    "start": "node bin/cli.js run",
+    "test": "jest",
+    "lint": "eslint src/ bin/",
+    "lint:fix": "eslint src/ bin/ --fix",
+    "format": "prettier --write src/ bin/",
+    "prepublishOnly": "npm run lint && npm test"
+  },
+  "keywords": [
+    "instagram",
+    "memes",
+    "automation",
+    "bot",
+    "social-media",
+    "pinterest",
+    "scraping",
+    "cli",
+    "nodejs",
+    "puppeteer"
+  ],
+  "author": "Aman Kumar <amankk179102@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aman179102/Instagram-Automation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aman179102/Instagram-Automation/issues"
+  },
+  "homepage": "https://github.com/aman179102/Instagram-Automation#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.11.0",
+    "commander": "^12.1.0",
+    "dotenv": "^17.2.1",
+    "instagram-private-api": "^1.46.1",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  },
+  "devDependencies": {
+    "eslint": "^9.15.0",
+    "globals": "^15.12.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.3.3"
+  }
+}
